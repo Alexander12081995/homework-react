@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    text-align: center;
+    font-style: italic;
+}
+.title {
+    margin-top: 30px;
+    font-size: 50px;
+}
+.groupAddTask {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subTitle {
+    margin-top: 30px;
+    font-size: 30px;
+    font-style: italic;
+}
+.groupTask {
+    margin-top: 20px;
+}
+.taskName {
+    display: inline-block;
+    margin-left: 20px;
+    min-width: 500px;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
