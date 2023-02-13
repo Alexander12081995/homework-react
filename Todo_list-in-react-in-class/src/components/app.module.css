@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todolist {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.title {
+    padding: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.groupAddTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupTask {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 150px 0;
+    padding: 15px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.deleteTask {
+    padding: 8px;
+    background-color: rgb(216, 209, 209);
+    border: 1px solid rgb(158, 145, 145);
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.subTitle {
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: rgb(165, 157, 150);
+}
