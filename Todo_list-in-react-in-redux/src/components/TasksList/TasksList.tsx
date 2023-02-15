@@ -1,28 +1,47 @@
-import {Button, Checkbox, Input} from "../common";
+import {Button, Checkbox, Input, Radiogroup} from "../common";
 import {useState} from "react";
 import {useTasksList} from './useTasksList'
-import {useSelector} from "react-redux";
-import {getTasks} from "../../store";
+
+const filters = [
+    {id: '1', label: 'all', value: 'all'},
+    {id: '2', label: 'completed', value: 'completed'},
+    {id: '3', label: 'active', value: 'active'},
+]
 
 export const TasksList = () => {
-  const tasks = useSelector(getTasks)
 
-
+    const [filter, setFilter] = useState('active')
     const [newTask, setNewTask] = useState('')
-    const {addTaskHandler} = useTasksList(newTask, () => setNewTask(""))
+    const {
+        addTaskHandler, deleteTaskHandler, changeTaskHandler, tasks} =
+        useTasksList(newTask, () => setNewTask(""))
+    const setFilters = (filter: string) => {
+        setFilter(filter)
+    }
 
     return (
         <div>
             <Input value={newTask} onChange={(e) => setNewTask(e.target.value)}/>
-            <Button children={'add task'} onClick={() => alert('delete')}/>
+            <Button children={'add task'} onClick={addTaskHandler}/>
+            <Radiogroup items={filters} name={filter} value={filter} onChange={setFilters}/>
             <ul>
-                {/*{tasks.map((task) => (*/}
-                {/*    <li>*/}
-                {/*        <Checkbox checked={task.isDone}/>*/}
-                {/*        <span>{task.name}</span>*/}
-                {/*        <Button onClick={() => alert('delete')} children={'x'}/>*/}
-                {/*    </li>*/}
-                {/*))}*/}
+                {tasks.filter((task): boolean => {
+                    if (filter === 'all') {
+                        return true
+                    }
+                    if (filter === 'active') {
+                        return !task.isDone
+                    }
+                    return task.isDone
+                })
+                    .map((task) => (
+                        <li>
+                            <Checkbox checked={task.isDone}
+                                      onChange={() => changeTaskHandler(task.id, {isDone: !task.isDone})}/>
+                            <span>{task.name}</span>
+                            <Button onClick={() => deleteTaskHandler(task.id)} children={'x'}/>
+                        </li>
+                    ))}
             </ul>
         </div>
     )
