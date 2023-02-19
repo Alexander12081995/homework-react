@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom/client';
 import { App } from './components/App';
-import { ErrorBoundary } from './components/common';
+import {Provider} from "react-redux";
+import {store} from "./components/store/rootStore";
 
 ReactDOM
   .createRoot(document.getElementById('root') as HTMLElement)
-  .render( <ErrorBoundary fallback = { <span>На сайте временно ведутся технические работы</span> }>
-    <App />
-  </ErrorBoundary> );
+  .render(
+      <Provider store={store}>
+         <App />
+      </Provider>
+   );
