@@ -1,9 +1,10 @@
 import {FC, ChangeEvent} from 'react';
 
 interface CheckboxProps {
-    checked: boolean
+    checked: boolean;
+    onChange: () => void;
 }
 
 export const Checkbox: FC<CheckboxProps> =
-    ({checked}) =>
-        <input type={'checkbox'} checked={checked}/>
+    ({checked, onChange}) =>
+        <input type={'checkbox'} onChange={onChange} checked={checked}/>

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d52a7099-1fd9-438d-99e6-22bb8a2500e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/TasksList/TasksList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TasksList/useTasksList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Checkbox/Checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Checkbox/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Input/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +10,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -29,17 +26,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/VS Code/Project/Homework_react/Todo_list-in-react-in-redux",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\Учеба\\VS Code\\Project\\Homework_react\\Todo_list-in-react-in-redux\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Учеба/VS Code/Project/Homework_react/Todo_list-in-react-in-redux&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Учеба\\VS Code\\Project\\Homework_react\\Todo_list-in-react-in-redux\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -65,7 +64,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676473709697</updated>
-      <workItem from="1676473711685" duration="9392000" />
+      <workItem from="1676473711685" duration="13070000" />
+      <workItem from="1676487301373" duration="6018000" />
+      <workItem from="1676542795344" duration="595000" />
     </task>
     <servers />
   </component>
