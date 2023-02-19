@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #1e241e, #0d140d, #0c141a);
+}

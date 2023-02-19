@@ -1,0 +1,30 @@
+.container {
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+.title {
+    color: rgb(240, 62, 62);
+    font-size: 50px;
+}
+
+.subtitle {
+    margin-right: 30px;
+    font-size: 60px;
+    color: rgb(204, 182, 182);
+    letter-spacing: 8px;
+}
+
+.groupInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tempInfo {
+    margin-right: 20px;
+    color: rgb(204, 182, 182);
+    font-size: 80px;
+}
+
