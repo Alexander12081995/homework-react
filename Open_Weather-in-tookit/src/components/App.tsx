@@ -2,7 +2,7 @@ import {useCallback, useEffect, useState} from "react"
 import {DropDown, Info, Input, Loader} from './common';
 import css from './app.module.css';
 import debounce from 'lodash/debounce';
-import {fetchWeather, getWeather, getWeatherLoadStatus} from './store/weather';
+import {actions, getWeather, getWeatherLoadStatus} from './store/weather';
 import {useDispatch, useSelector} from 'react-redux';
 import {Params} from "../types/Params";
 import {units} from "../const/Units";
@@ -23,9 +23,11 @@ export const App = () => {
     };
 
     const fetchWeatherDebounced = useCallback(debounce((params: Params): void =>
-        dispatch(fetchWeather(params) as any), 2_000), [dispatch]);
+        dispatch(actions.fetchWeather(params) as any), 2_000), [dispatch]);
 
-    useEffect(() => fetchWeatherDebounced(params), [params]);
+
+
+    useEffect(() => {fetchWeatherDebounced(params)}, [params]);
 
     return (
         <div className={css.container}>

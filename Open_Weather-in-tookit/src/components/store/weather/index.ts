@@ -1,3 +1,2 @@
-export { reducer } from './reducer';
+export { reducer, actions } from './slice';
 export * from './selector';
-export * from './actionCreators';

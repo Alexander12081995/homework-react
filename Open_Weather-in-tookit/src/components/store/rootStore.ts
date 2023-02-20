@@ -1,10 +1,7 @@
 import { reducer } from './weather';
-import {applyMiddleware, createStore} from "redux";
-import Thunk from 'redux-thunk';
+import {configureStore} from "@reduxjs/toolkit";
 
 
-
-
-export const store = createStore(reducer, applyMiddleware(Thunk))
+export const store = configureStore({reducer: reducer})
 
 export type RootStore = ReturnType<typeof store.getState>

@@ -1,5 +1,5 @@
-import { Store } from './reducer';
 import {RootStore} from "../rootStore";
+import {Store} from "./slice";
 
 export const getWeather = (store: RootStore): Store['data'] => store.data;
 
