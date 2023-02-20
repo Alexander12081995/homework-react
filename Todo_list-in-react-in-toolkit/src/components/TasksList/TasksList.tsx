@@ -37,7 +37,7 @@ export const TasksList = () => {
                     .map((task) => (
                         <li>
                             <Checkbox checked={task.isDone}
-                                      onChange={() => changeTaskHandler(task.id, {isDone: !task.isDone})}/>
+                                      onChange={() => changeTaskHandler(task.id)}/>
                             <span>{task.name}</span>
                             <Button onClick={() => deleteTaskHandler(task.id)} children={'x'}/>
                         </li>
